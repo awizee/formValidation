@@ -4,96 +4,61 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/app.css" />
     <title>form Validation</title>
+    <link rel="stylesheet" href="../css/app.css" />
   </head>
   <body>
     <header>
-      <h1>Welcome to my page</h1>
+      <h1>Welcome To My Page</h1>
     </header>
-    <article>
-      <h2>Sign Up</h2>
-      <section>
-        <form action="#" method="post">
-          <label for="fname">First Name:</label>
-          <input
-            type="text"
-            name="first name"
-            id="fname"
-            placeholder="cristiano"
-            required
-          />
-          <label for="lname">Last Name:</label>
-          <input
-            type="text"
-            name="last name"
-            id="lname"
-            placeholder="aviero"
-            required
-          />
-          <label for="oname">Other Name:</label>
-          <input
-            type="text"
-            name="other name"
-            id="oname"
-            placeholder="ronaldo"
-          />
-          <label for="user">Username:</label>
-          <input
-            type="text"
-            name="username"
-            id="user"
-            placeholder="awizee"
-            required
-          />
-          <label for="email">Email:</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            required
-            placeholder="example@gmail.com"
-          />
-          <label for="pwd">Password:</label>
-          <input
-            type="password"
-            name="password"
-            id="pwd"
-            placeholder="********"
-            required
-            pattern="^(?=.*\d)(?=.*[!@#($%^&)*])(?=.*[a-z])(?=.*[A-Z]).{8,}$"
-            title="Password Must contain Cap. Letters, Small Letters, Numbers, Special characters"
-          />
-          <label for="confirmpwd">Confirm Password:</label>
-          <input
-            type="password"
-            name="confirm password"
-            id="confirmpwd"
-            placeholder="********"
-            required
-            pattern="^(?=.*\d)(?=.*[!@#($%^&)*])(?=.*[a-z])(?=.*[A-Z]).{8,}$"
-            title="Password Must contain Cap. Letters, Small Letters, Numbers, Special characters"
-          />
-          <label for="number">Phone Number:</label>
-          <input
-            type="tel"
-            name="phone number"
-            id="number"
-            placeholder="0805467843546"
-            min="11"
-          />
-          <label for="dob">Date Of Birth:</label>
-          <input type="date" name="date of birth" id="dob" />
-          <input type="checkbox" name="terms" id="terms" required />
-          <label id="trms" for="terms"
-            >By Clicking the checkbox you have agreed to our
-            <a href="#">terms.</a></label
-          >
-          <input id="submit" type="submit" value="Log in" />
-          <p>Already have an account <a href="#">Log in</a></p>
-        </form>
-      </section>
-    </article>
+    <main>
+      <article>
+        <section>
+          <form action="#">
+            <div class="firstname">
+              <label for="fname">First Name:</label>
+              <input type="text" name="firstName" id="fname" />
+            </div>
+            <div class="lasname">
+              <label for="lname">Last Name:</label>
+              <input type="text" name="lastname" id="lname" />
+            </div>
+            <div class="othname">
+              <label for="oname">Other Name:</label>
+              <input type="text" name="othername" id="oname" />
+            </div>
+            <div class="number">
+              <label for="num">Phone Number:</label>
+              <input type="tel" name="phone number" id="num" />
+            </div>
+            <div class="mail">
+              <label for="email">Email:</label>
+              <input type="email" name="email" id="email" />
+            </div>
+            <div class="sex">
+              <label for="gender">Gender:</label>
+              <select name="gender" id="gender">
+                <option value="select">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+            <div class="birth">
+              <label for="dob">Date Of Birth</label>
+              <input type="date" name="date of birth" id="dob" />
+            </div>
+            <div class="color">
+              <label for="favcolor">Favorite Color</label>
+              <input type="color" name="color" id="favcolor" />
+            </div>
+            <div class="submit">
+              <input class="submit" type="submit" value="Sign Up" />
+            </div>
+          </form>
+        </section>
+      </article>
+    </main>
+    <footer>footer</footer>
 
     <script src="../js/app.js"></script>
   </body>
